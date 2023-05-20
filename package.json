@@ -1,6 +1,6 @@
 {
-  "name": "@ys-tools/nexus-raw",
-  "version": "1.0.1",
+  "name": "@sa-kit/nexus-raw",
+  "version": "v1.0.0",
   "description": "Nexus Artifact CLI to upload and download application raw artifacts.",
   "author": "Yadav, Sunil",
   "bin": {

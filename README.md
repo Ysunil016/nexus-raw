@@ -14,11 +14,11 @@ Nexus Raw Artifact CLI
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g @ys-tools/nexus-raw
+$ npm install -g @sa-kit/nexus-raw
 $ nexus-raw COMMAND
 running command...
 $ nexus-raw (--version)
-@ys-tools/nexus-raw/1.0.1 darwin-arm64 node-v16.20.0
+@sa-kit/nexus-raw/v1.0.0 darwin-arm64 node-v16.20.0
 $ nexus-raw --help [COMMAND]
 USAGE
   $ nexus-raw COMMAND
@@ -57,7 +57,7 @@ DESCRIPTION
   Download Nexus Artifact Command
 ```
 
-_See code: [dist/commands/download/index.ts](https://github.com/Ysunil016/nexus-raw/blob/v1.0.1/dist/commands/download/index.ts)_
+_See code: [dist/commands/download/index.ts](https://github.com/Ysunil016/nexus-raw/blob/vv1.0.0/dist/commands/download/index.ts)_
 
 ## `nexus-raw help [COMMANDS]`
 
@@ -332,5 +332,5 @@ DESCRIPTION
   Upload Artifact Command
 ```
 
-_See code: [dist/commands/upload/index.ts](https://github.com/Ysunil016/nexus-raw/blob/v1.0.1/dist/commands/upload/index.ts)_
+_See code: [dist/commands/upload/index.ts](https://github.com/Ysunil016/nexus-raw/blob/vv1.0.0/dist/commands/upload/index.ts)_
 <!-- commandsstop -->
