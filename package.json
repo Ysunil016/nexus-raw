@@ -1,15 +1,15 @@
 {
   "name": "@ys-tools/nexus-raw",
-  "version": "0.0.0",
+  "version": "1.0",
   "description": "Nexus Artifact CLI to upload and download application raw artifacts.",
   "author": "Yadav, Sunil",
   "bin": {
     "nexus-raw": "./bin/run"
   },
-  "homepage": "https://github.com/local/nexus-raw",
+  "homepage": "https://github.com/Ysunil016/nexus-raw",
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "local/nexus-raw",
+  "repository": "nexus-raw",
   "files": [
     "/bin",
     "/dist",
@@ -71,7 +71,7 @@
   "engines": {
     "node": ">=12.0.0"
   },
-  "bugs": "https://github.com/local/nexus-raw/issues",
+  "bugs": "https://github.com/Ysunil016/nexus-raw/issues",
   "keywords": [
     "oclif"
   ],
