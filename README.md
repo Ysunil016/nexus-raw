@@ -18,7 +18,7 @@ $ npm install -g @ys-tools/nexus-raw
 $ nexus-raw COMMAND
 running command...
 $ nexus-raw (--version)
-@ys-tools/nexus-raw/0.0.0 darwin-arm64 node-v16.20.0
+@ys-tools/nexus-raw/1.0.0 darwin-arm64 node-v16.20.0
 $ nexus-raw --help [COMMAND]
 USAGE
   $ nexus-raw COMMAND
@@ -56,8 +56,6 @@ FLAGS
 DESCRIPTION
   Download Nexus Artifact Command
 ```
-
-_See code: [dist/commands/download/index.ts](https://github.com/local/nexus-raw/blob/v0.0.0/dist/commands/download/index.ts)_
 
 ## `nexus-raw help [COMMANDS]`
 
@@ -331,6 +329,4 @@ FLAGS
 DESCRIPTION
   Upload Artifact Command
 ```
-
-_See code: [dist/commands/upload/index.ts](https://github.com/local/nexus-raw/blob/v0.0.0/dist/commands/upload/index.ts)_
 <!-- commandsstop -->
