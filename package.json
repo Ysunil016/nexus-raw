@@ -1,0 +1,79 @@
+{
+  "name": "@ys-tools/nexus-raw",
+  "version": "0.0.0",
+  "description": "Nexus Artifact CLI to upload and download application raw artifacts.",
+  "author": "Yadav, Sunil",
+  "bin": {
+    "nexus-raw": "./bin/run"
+  },
+  "homepage": "https://github.com/local/nexus-raw",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": "local/nexus-raw",
+  "files": [
+    "/bin",
+    "/dist",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "dependencies": {
+    "@oclif/core": "^2",
+    "@oclif/plugin-help": "^5",
+    "@oclif/plugin-plugins": "^2.4.7",
+    "axios": "^1.4.0",
+    "class-validator": "^0.14.0",
+    "form-data": "^4.0.0"
+  },
+  "devDependencies": {
+    "@oclif/test": "^2.3.19",
+    "@types/chai": "^4",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.18.29",
+    "@types/validator": "^13.7.15",
+    "chai": "^4",
+    "eslint": "^7.32.0",
+    "eslint-config-oclif": "^4",
+    "eslint-config-oclif-typescript": "^1.0.3",
+    "mocha": "^9",
+    "oclif": "^3",
+    "shx": "^0.3.3",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.5.0",
+    "typescript": "4.4.4"
+  },
+  "oclif": {
+    "bin": "nexus-raw",
+    "dirname": "nexus-raw",
+    "commands": "./dist/commands",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins"
+    ],
+    "topicSeparator": " ",
+    "topics": {
+      "upload": {
+        "description": "Upload Artifact"
+      },
+      "download": {
+        "description": "Download Artifact"
+      }
+    }
+  },
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "lint": "eslint . --ext .ts --config .eslintrc",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "posttest": "yarn lint",
+    "prepack": "yarn build && oclif manifest && oclif readme",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif readme && git add README.md"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "bugs": "https://github.com/local/nexus-raw/issues",
+  "keywords": [
+    "oclif"
+  ],
+  "types": "dist/index.d.ts"
+}
